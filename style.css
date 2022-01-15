@@ -1,5 +1,8 @@
 body{
     margin: 40px;
+    padding: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
     
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -9,7 +12,7 @@ body{
     justify-content: center;
     background-color: white;
     padding: 50px;
-    margin-top: 30px;
+    margin-top: 0 auto;
     border-radius: 5px;
 }
 
@@ -58,9 +61,13 @@ body{
 }
 
 .home-banner-image{
-    width: 440px;
-    height: 414px;
+    /* width: 440px;
+    height: 414px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: width 10s, height 10s, transform 6s;
+    padding-right: 5px;
 }
 .home-banner-image:hover{
     width: 400px;
@@ -88,7 +95,9 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 24px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
+    align-items: center;
+    justify-items: center;
     
     
     
@@ -137,4 +146,395 @@ body{
     color: #787885;
     font-weight: bold;
     font-size: 14px;
+}
+
+
+.see-more{
+    height: 44px;
+    width: 190px;
+   
+    
+    font-size: 20px;
+    
+    display: flex;
+    /* margin-left: 850px; */
+    
+    
+    
+    
+}
+.see-more a{
+    text-decoration: none;
+    color:  #E02C6D;;
+    padding: 5px 10px;
+  
+    
+
+}
+
+
+
+
+/* best price section */
+
+
+.best-price-header{
+    font-size: 24px;
+    font-weight: bold;
+    /* margin-left: 50px; */
+}
+
+.best-price-banner-image img{
+    width: 440px;
+    height: 414px;
+}
+.best-price-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 250px;
+   
+}
+.best-price-banner-header{
+    width: 582px;
+    height: 133px;
+    font-size: 52px;
+
+}
+
+
+
+/*----------------------------------------------------
+------------------------------ footer----------- */
+
+.footer-section {
+    
+    padding-top: 20px;
+    height: 200px;
+    
+    background-color: rgb(65, 58, 97);
+    color: white;
+    text-align: center;
+    
+    
+    
+}
+
+
+
+
+
+
+
+/* --------------------------------- ---------------
+-------------------------media ----------------------*/
+
+@media (max-width: 668px) {
+    .container{
+        width: 100%;
+        
+    }
+    .home-banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+      
+        grid-gap: 0;
+       
+        
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+    .home-banner-image img{
+        width:100%;
+        
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding-right: 5px;
+        
+    }
+    .home-banner-text{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .home-banner-header{
+        display: grid;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .home-banner-details{
+        display: grid;
+        width: 100%;
+        align-items: center;
+    }
+    /* .product-sample{
+        
+        display: grid;
+    } */
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+    .product{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        left: 0;
+        
+    }
+    .product-heading{
+        display: grid;
+        justify-content: center;
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+        margin-left:60px;
+        margin-bottom: 10px;
+    }
+
+    .see-more{
+        margin-left: 50px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    .see-icon{
+        width: 100%;
+        margin-left: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    /* .product-banner{
+        display: grid;
+       
+    }
+    .product-delivery{
+        display: grid;
+       
+        
+    }
+    .product-detail{
+        display: grid;
+        
+    } */
+
+    .best-price-banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+      
+        
+        
+        align-items: center;
+        width: 100%;
+        grid-gap: 0;
+        
+        
+    }
+    .best-price-banner-image img{
+        width:100%;
+        
+        
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+       margin-right: 10px;
+        /* padding-right: 5px; */
+        
+    }
+    .best-price-banner-text{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .best-price-banner-header{
+        display: grid;
+        align-items: center;
+        width: 100%;
+        margin-bottom:100px ;
+    }
+    .best-price-banner-details{
+        display: grid;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* .footer-section{
+        display: grid;
+        align-items: center;
+        width: 100%;
+    } */
+
+}
+
+@media (min-width:668px) and (max-width:992px)
+{
+    .container{
+        width: 100%;
+        
+    }
+    .home-banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+      
+        grid-gap: 0;
+        
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+    .home-banner-image img{
+        width:100%;
+        
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        padding-right: 5px;
+        
+    }
+    .home-banner-text{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .home-banner-header{
+        display: grid;
+        align-items: center;
+        width: 100%;
+    }
+    .home-banner-details{
+        display: grid;
+        width: 100%;
+        align-items: center;
+    }
+    /* .product-sample{
+        
+        display: grid;
+    } */
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+    .product{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        left: 0;
+        
+    }
+    .product-heading{
+        display: grid;
+        justify-content: center;
+        left: 0;
+        bottom: 15px;
+        width: 100%;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    /* .product-banner{
+        display: grid;
+       
+    }
+    .product-delivery{
+        display: grid;
+       
+        
+    }
+    .product-detail{
+        display: grid;
+        
+    } */
+
+    .best-price-banner{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       
+      
+        
+        
+        align-items: center;
+        width: 100%;
+        grid-gap: 0;
+        
+        
+    }
+    .best-price-banner-image img{
+        width:100%;
+        
+        
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+       margin-right: 10px;
+        /* padding-right: 5px; */
+        
+    }
+    .best-price-banner-text{
+        display: grid;
+        width: 100%;
+        justify-items: center;
+        
+       
+        
+        align-items: center;
+        justify-content: center;
+    }
+    .best-price-banner-header{
+        display: grid;
+        align-items: center;
+        width: 100%;
+        margin-bottom:100px ;
+    }
+    .best-price-banner-details{
+        display: grid;
+        width: 100%;
+        align-items: center;
+    }
 }
